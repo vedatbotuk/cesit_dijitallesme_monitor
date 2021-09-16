@@ -1,0 +1,162 @@
+body {
+    /*text-align: center;*/
+    font-family: 'Jost', sans-serif;
+    background-color: #f7f7e3;
+}
+
+h1 {
+    font-size: 48px;
+    color: #232c3d;
+}
+
+h2 {
+    font-size: 36px;
+    color: #232c3d;
+}
+
+h3 {
+    font-size: 24px;
+    color: #575757;
+    font-family: "Ubuntu Light", serif;
+
+}
+
+.wrapper {
+    /*display: flex;*/
+    /*width: 50%;*/
+    /*right: 40%;*/
+    border-radius: 3px;
+    padding: 20px;
+    box-shadow: 0 2.5px 7.5px rgba(0, 0, 0, .1);
+    float: left;
+    margin: 30px;
+}
+
+.input {
+    width: 50%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=button] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    margin: 2px ;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    float: left;
+}
+
+input[type=button]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 6px;
+    background-color: rgba(242, 242, 242, 0.3);
+    padding: 20px;
+}
+
+.col-name {
+    float: left;
+    width: 100%;
+    padding: 3px;
+    /*margin-top: 6px;*/
+    }
+
+.col-input {
+    float: left;
+    width: 35%;
+    /*margin-bottom: 2px;*/
+    padding: 6px;
+    margin-bottom: 12px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    resize: vertical;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.card {
+    width: 50%;
+}
+
+.buttonWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+button {
+    letter-spacing: 3px;
+    border: none;
+    padding: 10px;
+    background-color: #bccbe9;
+    color: #232c3d;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+
+p {
+    text-align: left;
+    /*padding: 0px;*/
+}
+
+/*.content {*/
+/*    display: none;*/
+/*    !*padding: 10px 20px;*!*/
+/*}   */
+
+/*.content.active {*/
+/*    display: block;*/
+/*}*/
+
+th, td {
+    text-align: left;
+    height: 25px;
+    vertical-align: bottom;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+    width: 250px;
+    font-size: 15px;
+}
+
+table*, p{
+    background:none transparent;
+    border:0;
+}
+
+.postIt {
+    border-radius: 15px;
+    padding: 5px 25px 25px;
+    margin: 10px;
+    /*background: #ffcc00;*/
+}
+
+.postIt-grid {
+    margin: 10px auto;
+    height: 100%;
+}
+
+.postIt-container {
+    float: left;
+    width: 92%;
+    height: 100%;
+    display: inline-grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    /*grid-template-rows: 25% 25% 25% 25%;*/
+    grid-gap: 10px;
+}
