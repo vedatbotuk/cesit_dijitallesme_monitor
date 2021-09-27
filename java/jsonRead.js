@@ -1,6 +1,6 @@
 let jsonData, readedData, x, y;
 let file = "../data_master.json"
-// let urls = ["http://192.168.1.52/data.json", "http://192.168.1.98/data.json"]
+// let file = "../cesit_dijitallesme_monitor/data_master.json"
 let post = "";
 
 
@@ -10,7 +10,7 @@ fetch(file)
         // console.log(data)
         jsonData = data;
         readData();
-        $("#postIt").html(post);
+        $("#container-id").html(post);
     })
 
 
@@ -22,7 +22,7 @@ function readData() {
     for (let x in readedData) {
         if (readedData.hasOwnProperty(x)) {
             console.log(x);
-            post += "<div class='postIt' id='postIt" + x + "'><table>" + "<tr><td style='border-bottom: 0;'>" + "<h3>" + "Makine " + x + "</h3>" + "</td></tr>";
+            post += "<div class='postIt'><table>" + "<div id='container-id" + x + "' class='container'><hr1 style='border-bottom: 0;'>" + "<h3>" + "Makine " + x + "</h3>" + "</hr1></div>";
             for (y in readedData[x]) {
                 if (readedData[x].hasOwnProperty(y)) {
                     // console.log(x);
@@ -36,21 +36,21 @@ function readData() {
                 // console.log(readedData[x]["Makine Durumu"]);
                 // console.log("#element " + counter);
                 $(document).ready(function () {
-                    $("#postIt" + x).css("background", "rgba(189,189,189,0.5)")
+                    $("#container-id" + x).css("background", "rgba(189,189,189,0.5)")
                 });
             }
             if (readedData[x]["Makine Durumu"] === "Duruyor") {
                 // console.log(readedData[x]["Makine Durumu"]);
                 // console.log("#element " + counter);
                 $(document).ready(function () {
-                    $("#postIt" + x).css("background", "rgba(255,50,50,0.5)")
+                    $("#container-id" + x).css("background", "rgba(255,50,50,0.5)")
                 });
             }
             if (readedData[x]["Makine Durumu"] === "Duruyor - Arıza") {
                 // console.log(readedData[x]["Makine Durumu"]);
                 // console.log("#element " + counter);
                 $(document).ready(function () {
-                    $("#postIt" + x).css("background", "rgba(252,215,86,0.5)")
+                    $("#container-id" + x).css("background", "rgba(252,215,86,0.5)")
                 });
             }
 
@@ -58,7 +58,7 @@ function readData() {
                 // console.log(readedData[x]["Makine Durumu"]);
                 // console.log("#element " + counter);
                 $(document).ready(function () {
-                    $("#postIt" + x).css("background", "rgba(135,255,231,0.5)")
+                    $("#container-id" + x).css("background", "rgba(135,255,231,0.5)")
                 });
             }
 
@@ -66,7 +66,7 @@ function readData() {
                 // console.log(readedData[x]["Makine Durumu"]);
                 // console.log("#element " + counter);
                 $(document).ready(function () {
-                    $("#postIt" + x).css("background", "rgba(213,135,255,0.5)")
+                    $("#container-id" + x).css("background", "rgba(213,135,255,0.5)")
                 });
             }
 
@@ -74,7 +74,7 @@ function readData() {
                 // console.log(readedData[x]["Makine Durumu"]);
                 // console.log("#element " + counter);
                 $(document).ready(function () {
-                    $("#postIt" + x).css("background", "rgba(78,137,255,0.5)")
+                    $("#container-id" + x).css("background", "rgba(78,137,255,0.5)")
                 });
             }
 
@@ -84,7 +84,7 @@ function readData() {
                 // $("table").eq("#post"+ x).css("background", "rgba(71,255,8,0.5)");
                 $(document).ready(function () {
                     // console.log(counter);
-                    $("#postIt" + x).css("background", "rgba(71,255,8,0.5)")
+                    $("#container-id" + x).css("background", "rgba(71,255,8,0.5)")
                 });
             }
         }
