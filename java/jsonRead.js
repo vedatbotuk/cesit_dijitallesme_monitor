@@ -22,7 +22,7 @@ function readData() {
     for (let x in readedData) {
         if (readedData.hasOwnProperty(x)) {
             console.log(x);
-            post += "<div class='postIt'><table>" + "<div id='container-id" + x + "' class='container'><hr1 style='border-bottom: 0;'>" + "<h3>" + "Makine " + x + "</h3>" + "</hr1></div>";
+            post += "<div class='postIt'><table>" + "<article id='container-id" + x + "' class='container'><hr1 style='border-bottom: 0;'>" + "<h3>" + "Makine " + x + "</h3>" + "</hr1></article>";
             for (y in readedData[x]) {
                 if (readedData[x].hasOwnProperty(y)) {
                     // console.log(x);
